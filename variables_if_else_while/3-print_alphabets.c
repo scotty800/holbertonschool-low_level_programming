@@ -15,12 +15,12 @@ int main(void)
 {
 	char alpha, ALPHA;
 
-	for (alpha = 'a'; alpha <= 'a'; alpha++)
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
 		putchar(alpha);
 	}
 
-	for (ALPHA = 'A'; ALPHA <= 'A'; ALPHA++)
+	for (ALPHA = 'A'; ALPHA <= 'Z'; ALPHA++)
 	{
 		putchar(ALPHA);
 	}

@@ -13,12 +13,16 @@
 
 int main(void)
 {
-	char alpha;
+	char alpha, ALPHA;
 
-	for (alpha = 'A'; alpha <= 'Z'; alpha++)
+	for (alpha = 'a'; alpha <= 'a'; alpha++)
 	{
 		putchar(alpha);
-		putchar(tolower(alpha));
+	}
+
+	for (ALPHA = 'A'; ALPHA <= 'A'; ALPHA++)
+	{
+		putchar(ALPHA);
 	}
 
 	printf("\n");

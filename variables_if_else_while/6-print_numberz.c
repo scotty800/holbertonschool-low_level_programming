@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-#include <ctype.h>
 /* more headers goes there */
 
 /**
@@ -13,11 +12,11 @@
 
 int main(void)
 {
-	int numb = '0';
+	int num;
 
-	for (numb = '0'; numb <= '9'; numb++)
+	for (num = '0'; num <= '9'; num++)
 	{
-		putchar(numb);
+		putchar(num);
 	}
 
 	printf("\n");

@@ -13,7 +13,7 @@
 
 int main(void)
 {
-	char numb = '0';
+	int numb = '0';
 
 	for (numb = '0'; numb <= '9'; numb++)
 	{

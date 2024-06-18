@@ -17,8 +17,10 @@ int main(void)
 
 	while (numb < 10)
 	{
-	printf("%d\n", numb);
+	printf("%d", numb);
 	numb++;
 	}
+	printf("\n");
+
 	return (0);
 }

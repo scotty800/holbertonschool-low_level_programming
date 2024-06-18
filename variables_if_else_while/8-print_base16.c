@@ -16,7 +16,7 @@ int main(void)
 
 	for (num = '0'; num <= '9'; num++)
 	{
-		putchar(num + '0');
+		putchar(num);
 	}
 
 	for (num = '0'; num <= '6'; num++)

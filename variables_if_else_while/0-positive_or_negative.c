@@ -5,6 +5,9 @@
 
 /**
  * main - Entry point
+ * Description : this program will assign a random number
+ * each time it is executed, iy will then print wether
+ * in the variable `n` is positive, zero or negative.
  * Return: Allways 0 (Succes)
  */
 

@@ -10,32 +10,18 @@
 
 int main(void)
 {
+	int num;
 
-	int a;
-
-	int b;
-
-	int c;
-
-	a = 0;
-	b = 1;
-	c = 2;
-
-	while (a <= 9)
+	for (num = '0'; num <= '9'; num++)
 	{
-		while (b <= 9)
+		putchar(num);
+
+		if (num != '9')
 		{
-			while (c <= 9)
-			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
-				putchar(' ');
-			}
-			c++;
+		putchar(',');
+		putchar(' ');
 		}
-		b++;
+		putchar('\n');
 	}
-	a++;
 		return (0);
 }

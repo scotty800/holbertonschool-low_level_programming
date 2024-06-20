@@ -1,6 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void _putchar(void);
+#include <unistd.h>
+
+int _putchar(char c);
+int main(void);
 
 #endif

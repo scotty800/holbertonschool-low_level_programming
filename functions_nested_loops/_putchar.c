@@ -3,14 +3,12 @@
 
 /**
  * main - check the code
- * Return allways 0
+ * Return: Allways 0.
  * _putchar - display putchar
  **/
 
-int main(void)
+void _putchar(void)
 {
-	_putchar();
-
-	return (0);
+	printf("_putchar\n");
 
 }

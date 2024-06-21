@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * times_table -verfi si int vas me retourner une valeur absolu
- * Return: abs de la variable en positive ou negation
+ * jack_bauer -prints every minute of the day of
+ *jack bauer - starting from 00:00 to 23:59.
+ * Return: 0
  */
 
-void times_table(void)
+void jack_bauer(void)
 {
 	int hour, min;
 

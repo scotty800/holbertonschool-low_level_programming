@@ -1,17 +1,19 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * _abs -verfi si int vas me retourner une valeur absolu
  * @num : variable entier
- * Return: 0
+ * Return: abs de la variable en positive ou negation
  */
 
 int _abs(int num)
 {
 	if (num >= 0)
-	return (0);
-
+	{
+		return (num);
+	}
 	else
-		return (-0);
+	{
+		return (-num);
+	}
 }

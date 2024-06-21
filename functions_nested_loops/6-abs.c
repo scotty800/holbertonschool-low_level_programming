@@ -9,13 +9,9 @@
 
 int _abs(int num)
 {
-	int num2;
-
-	num = _abs(1);
-	putchar(num);
-
-	num2 = _abs(-5);
-	putchar(num2);
-
+	if (num >= 0)
 	return (0);
+
+	else
+		return (-0);
 }

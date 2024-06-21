@@ -13,8 +13,8 @@ void print_alphabet(void)
 
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		putchar(alpha);
+		_putchar(alpha);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }

@@ -23,9 +23,14 @@ void times_table(void)
 				_putchar(' ');
 			}
 
-			if (resul <= 10)
+			if (resul <= 9)
 			{
 				_putchar(' ');
+			}
+
+			if (resul <= 9)
+			{
+				-putchar (resul + '0');
 			}
 			else
 			{

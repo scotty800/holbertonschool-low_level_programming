@@ -5,6 +5,7 @@
  * print_to_98 - a en parametre un entier
  * @n : name de variable int
  * num : variable entier de % dix
+ * return: retourne le resultat
  */
 
 void print_to_98(int n)
@@ -14,7 +15,7 @@ void print_to_98(int n)
 	{
 		for (n = 98; n > 0; n--)
 		{
-			putchar('0' + n);
+			putchar('n');
 			if (n != 98)
 			{
 				putchar(' ');
@@ -26,7 +27,7 @@ void print_to_98(int n)
 	{
 		for (n = 0; n < 98; n++)
 		{
-			putchar('0' + n);
+			putchar('n');
 			if (n != 98)
 			{
 				putchar(' ');

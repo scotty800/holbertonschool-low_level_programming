@@ -1,10 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit -verfi si int vas me retourner une valeur %
- * @num : variable entier
- * lastN : variable entiter
- * Return: % de la variable en positive ou negation
+ * times_table -prints the 9 times table.
  */
 
 void times_table(void)

@@ -4,47 +4,37 @@
 /**
  * print_to_98 - a en parametre un entier
  * @n : name de variable int
- * num : variable entier de % dix
- * return: retourne le resultat
  */
 
 void print_to_98(int n)
 {
+	int lastn = n;
 
 	if (n <= 98)
 	{
-		while (n <= 98)
+		while (lastn <= 98)
 		{
-			if (n != 98)
+			if (lastn != 98)
 			{
 				_putchar(' ');
 				_putchar(',');
-
-				_putchar((n / 10) + '0');
-				_putchar((n % 10) + '0');
 			}
-
+			if (lastn >= 10)
+			{
+				_putchar((lastn / 10) + '0');
+				_putchar((lastn % 10) + '0');
+			}
+			else
+			{
+				_putchar(lastn + '0');
+			}
+			lastn++;
 		}
-		n++;
 	}
 	else
 	{
-		while (n >= 98)
-		{
-			_putchar(n + '0');
-			if (n != 98)
-			{
-				_putchar(' ');
-				_putchar(',');
-
-				_putchar((n / 10) + '0');
-				_putchar((n % 10) + '0');
-			}
-		}
-		n--;
+		lastn--;
 	}
-	_putchar('9');
-	_putchar('8');
+	_putchar('\n');
 
 }
-

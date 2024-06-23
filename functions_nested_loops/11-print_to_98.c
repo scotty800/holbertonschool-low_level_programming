@@ -10,9 +10,9 @@ void print_to_98(int n)
 {
 	int lastn = n;
 
-	if (n <= 98)
+	if (n <= 98 && n >= 98)
 	{
-		while (lastn <= 98)
+		while (lastn <= 98 && lastn >= 98)
 		{
 			if (lastn != 98)
 			{

@@ -9,7 +9,20 @@
 
 void times_table(void)
 {
-	int num, multi;
+	int num, multi, resul;
+
+	for (num = 0; num < 9; num++)
+	{
+		_putchar('0');
+
+		for (num = 1; num < 9; num++)
+		{
+			_putchar(' ');
+			_putchar(',');
+
+			resul = 
+		}
+	}
 
 
 }

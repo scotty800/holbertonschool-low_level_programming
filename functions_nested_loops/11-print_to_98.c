@@ -33,24 +33,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		while (lastn >= 98)
-		{
-			if (lastn != 98)
-			{
-				_putchar(' ');
-				_putchar(',');
-			}
-			if (lastn >= 10)
-			{
-				_putchar((lastn / 10) + '0');
-				_putchar((lastn % 10) + '0');
-			}
-			else
-			{
-				_putchar(lastn + '0');
-			}
-			lastn--;
-		}
+		lastn--;
 	}
 	_putchar('\n');
 

@@ -7,14 +7,13 @@
 
 void times_table(void)
 {
-	int num, resul;
-	int mult = 12;
+	int num, resul, mult;
 
 	for (num = 0; num <= 9; num++)
 	{
 		_putchar('0');
 
-		for (num = 1; num <= 9; num++)
+		for (mult = 1; mult <= 9; mult++)
 		{
 			_putchar(' ');
 			_putchar(',');
@@ -27,9 +26,9 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar((resul / 10) + '0');
+				_putchar(resul / 10 + '0');
 
-				_putchar((resul % 10) + '0');
+				_putchar(resul % 10 + '0');
 			}
 		}
 		_putchar('\n');

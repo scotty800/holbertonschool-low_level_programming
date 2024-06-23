@@ -4,26 +4,35 @@
 /**
  * print_to_98 - a en parametre un entier
  * @n : name de variable int
+ * num : variable entier de % dix
  */
 
 void print_to_98(int n)
 {
-	if (n > 98)
+	int num = n % 10;
+
+	if (num >= 98)
 	{
-		for (n = 98 ; n > 0; n--)
+		for (num = 98; num > 0; num--)
 		{
-			putchar(n % 10 + '0');
-			putchar(' ');
-			putchar(',');
+			putchar(num + '0');
+			if (num != 98)
+			{
+				putchar(' ');
+				putchar(',');
+			}
 		}
 	}
 	else
 	{
-		for (n = 0; n < 98; n++)
+		for (num = 0; num < 98; num++)
 		{
-			putchar(n % 10 + '0');
-			putchar(' ');
-			putchar(',');
+			putchar(num + '0');
+			if (num != 98)
+			{
+				putchar(' ');
+				putchar(',');
+			}
 		}
 	}
 }

@@ -20,8 +20,20 @@ void times_table(void)
 			_putchar(' ');
 			_putchar(',');
 
-			resul = 
+			resul = num * mult;
+
+			if (result <= 9)
+			{
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(resul / 10);
+
+				_putchar(resul % 10 + '0');
+			}
 		}
+		_putchar('\n');
 	}
 
 

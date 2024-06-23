@@ -9,14 +9,13 @@
 
 void print_to_98(int n)
 {
-	int num = n % 10;
 
-	if (num >= 98)
+	if (n >= 98)
 	{
-		for (num = 98; num > 0; num--)
+		for (n = 98; n > 0; n--)
 		{
-			putchar(num + '0');
-			if (num != 98)
+			putchar('0' + n);
+			if (n != 98)
 			{
 				putchar(' ');
 				putchar(',');
@@ -25,10 +24,10 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (num = 0; num < 98; num++)
+		for (n = 0; n < 98; n++)
 		{
-			putchar(num + '0');
-			if (num != 98)
+			putchar('0' + n);
+			if (n != 98)
 			{
 				putchar(' ');
 				putchar(',');

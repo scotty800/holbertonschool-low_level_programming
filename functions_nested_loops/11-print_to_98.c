@@ -24,7 +24,7 @@ void print_to_98(int n)
 				_putchar((lastn / 10) + '0');
 				_putchar((lastn % 10) + '0');
 			}
-			if (lastn < 0)
+			else if(lastn < 0)
 			{
 				lastn = -lastn;
 			}

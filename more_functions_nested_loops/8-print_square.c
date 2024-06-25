@@ -19,10 +19,9 @@ void print_square(int size)
 	{
 		for (square2 = 0; square2 < square1; square2++)
 		{
-			_putchar(' ');
+			_putchar('#');
 		}
 
-		_putchar('#');
 		_putchar('\n');
 	}
 }

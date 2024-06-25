@@ -19,7 +19,12 @@ void print_triangle(int size)
 	{
 		for (triangle2 = 0; triangle2 <= triangle1; triangle2++)
 		{
-			_putchar('#');
+			if (triangle2 > 0 && triangle2 < (triangle1 -1) && triangle1 > 0 && triangle1 < size)
+			{
+				_putchar(' ');
+			}
+			else
+				_putchar('#');
 		}
 		_putchar(' ');
 		_putchar('\n');

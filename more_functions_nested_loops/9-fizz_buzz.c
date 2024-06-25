@@ -14,19 +14,19 @@ int main(void)
 	{
 		if (nombre == 100)
 		{
-			printf("Buzz");
+			printf("Buzz ");
 		}
 		if (nombre % 3 == 0 && nombre % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else if (nombre % 3 == 0)
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
 		else if (nombre % 5 == 0)
 		{
-			printf("Buzz");
+			printf("Buzz ");
 		}
 		else if (nombre <= 9)
 		{

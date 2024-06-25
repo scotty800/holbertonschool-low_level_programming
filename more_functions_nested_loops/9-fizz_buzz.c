@@ -26,10 +26,11 @@ int main(void)
 		}
 		else
 		{
-			printf("nombre");
+			putchar('0' + nombre / 10);
+			putchar('0' + nombre % 10);
+			putchar(' ');
 		}
-
-		printf("\n");
 	}
+	putchar('\n');
 	return (0);
 }

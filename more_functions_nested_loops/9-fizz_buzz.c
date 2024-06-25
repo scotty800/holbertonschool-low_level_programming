@@ -12,7 +12,7 @@ int main(void)
 
 	for (nombre = 1; nombre < 100; nombre++)
 	{
-		if (nombre <= 100)
+		if (nombre == 100)
 		{
 			printf("buzze");
 		}

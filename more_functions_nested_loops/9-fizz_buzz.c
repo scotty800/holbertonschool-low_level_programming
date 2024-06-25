@@ -10,7 +10,7 @@ int main(void)
 {
 	int nombre;
 
-	for (nombre = 1; nombre < 100; nombre++)
+	for (nombre = 1; nombre <= 100; nombre++)
 	{
 		if (nombre % 3 == 0 && nombre % 5 == 0)
 		{
@@ -28,7 +28,7 @@ int main(void)
 		{
 			printf("%d", nombre);
 		}
-		if (nombre <= 100)
+		if (nombre < 100)
 		{
 			putchar(' ');
 		}

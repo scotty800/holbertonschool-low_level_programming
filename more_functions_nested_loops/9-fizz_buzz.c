@@ -16,7 +16,7 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		if (nombre % 3 == 0 && nombre % 5 == 0)
+		else if (nombre % 3 == 0 && nombre % 5 == 0)
 		{
 			printf("FizzBuzz ");
 		}

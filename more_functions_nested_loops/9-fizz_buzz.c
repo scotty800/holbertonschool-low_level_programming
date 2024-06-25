@@ -12,6 +12,10 @@ int main(void)
 
 	for (nombre = 1; nombre < 100; nombre++)
 	{
+		if (nombre <= 100)
+		{
+			printf("buzze");
+		}
 		if (nombre % 3 == 0 && nombre % 5 == 0)
 		{
 			printf("FizzBuzz");
@@ -23,6 +27,11 @@ int main(void)
 		else if (nombre % 5 == 0)
 		{
 			printf("Buzz");
+		}
+		else if (nombre <= 9)
+		{
+			putchar('0' + nombre % 10);
+			putchar(' ');
 		}
 		else
 		{

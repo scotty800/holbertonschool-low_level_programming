@@ -28,7 +28,7 @@ int main(void)
 		{
 			printf("%d", nombre);
 		}
-		if (nombre < 100)
+		if (nombre <= 100)
 		{
 			putchar(' ');
 		}

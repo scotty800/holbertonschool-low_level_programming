@@ -1,10 +1,16 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * more_numbers -print 10 times the numbers, followed by a new line.
+ * print_line -print.
+ * @n: is the variable n
  */
 
 void print_line(int n)
 {
-
+	for (n = 0; n >= 0; n--)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
 }

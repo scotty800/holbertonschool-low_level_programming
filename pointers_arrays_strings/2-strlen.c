@@ -3,7 +3,8 @@
 
 /**
  * _strlen -print
- * @s: is the variable n
+ * @s: is the variable
+ * Return: length
  */
 
 int _strlen(char *s)

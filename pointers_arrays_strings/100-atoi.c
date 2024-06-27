@@ -15,7 +15,7 @@ int _atoi(char *s)
 	int sign = 1;
 	int boolen = 0;
 
-	while (s[i] != '\0')
+	while (s[i] != '\0' && (s[i] < '0' || s[i] > '9')) 
 	{
 		if (s[i] == '-')
 		{
@@ -25,18 +25,13 @@ int _atoi(char *s)
 		{
 
 		}
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			boolen = 1;
-			result = result * 10 + (s[i] - '0');
-		}
-		else if (boolen == 1)
-		{
-			break;
-		}
+	}
+	while (s[i] != '\0' && s[i] >= '0' && s[i] <= '9')
+	{
+		boolen = 1;
+		result = result * 10 + (s[i] - '0');
 		i++;
 	}
-
 	if (!boolen)
 	{
 		return (0);

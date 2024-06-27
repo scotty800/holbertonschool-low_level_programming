@@ -30,7 +30,7 @@ int _atoi(char *s)
 			boolen = 1;
 			result = result * 10 + (s[i] - '0');
 		}
-		else if (boolen == 1)
+		else if (boolen)
 		{
 			break;
 		}

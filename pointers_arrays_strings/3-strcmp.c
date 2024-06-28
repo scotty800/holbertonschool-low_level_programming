@@ -14,12 +14,12 @@ int _strcmp(char *s1, char *s2)
 	int i = 0;
 	int s = 0;
 
-	while (s2[s] != 0)
+	while (s2[s] != '\0')
 	{
 		s++;
 	}
 
-	while (s1[i] != 0)
+	while (s1[i] != '\0')
 	{
 		i++;
 	}

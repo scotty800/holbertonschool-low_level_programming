@@ -12,14 +12,19 @@
 char *_strcat(char *dest, char *src)
 {
 	int i = 0;
-	int sizeline = strlen(dest);
+	int s = 0;
+
+	while (dest[s] != '\0')
+	{
+		s++;
+	}
 
 	while (src[i] != '\0')
 	{
-		dest[sizeline + i] = src[i];
+		dest[s + i] = src[i];
 		i++;
 	}
-	dest[sizeline + i] = '\0';
+	dest[s + i] = '\0';
 
 	return (dest);
 }

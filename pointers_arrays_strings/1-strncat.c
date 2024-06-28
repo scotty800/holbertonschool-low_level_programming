@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * *_strcat -print
+ * *_strncat -print
  * @dest: pointer
  * @src: pointer
  * @n: pointer de src
@@ -12,13 +12,20 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+	int i = 0;
+	int s = 0;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	while (dest[s] != '\0')
 	{
-		dest[i] = src[i];
+		s++;
 	}
-	for (; i < n; i++)
-		dest[i] = '\0';
-	return dest;
+
+	while (i < n && src[i] != '\0')
+	{
+		dest[s + i] = src[i];
+		i++;
+	}
+	dest[s + i] = '\0';
+
+	return (dest);
 }

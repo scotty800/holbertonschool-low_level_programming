@@ -11,34 +11,21 @@
 char *leet(char *src)
 {
 	int i;
-
+	char letters[] = "aAeEoOtTlL";
+	char leet[] = "4433007711";
+	
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		if (src[i] ==  'a' || src[i] == 'A')
+		for (j = 0; letters[j] != '\0'; j++)
 		{
-			src[i] = '4';
-		}
+			if (src[i] == letters[j])
+			{
+				src[i] = leet[j];
 
-		else if (src[i] == 'e' || src[i] == 'E')
-		{
-			src[i] = '3';
-		}
-
-		else if (src[i] == 'o' || src[i] == 'O')
-		{
-			src[i] = '0';
-		}
-
-		else if (src[i] == 't' || src[i] == 'T')
-		{
-			src[i] = '7';
-		}
-
-		else if (src[i] == 'l' || src[i] == 'I')
-		{
-			src[i] = '1';
+				break;
+			}
 		}
 	}
-
-	return (src);
+	
+	return src;
 }

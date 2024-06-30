@@ -16,27 +16,27 @@ char *leet(char *src)
 	{
 		if (src[i] ==  'a' || src[i] == 'A')
 		{
-			src[i] == '4';
+			src[i] = '4';
 		}
 
 		else if (src[i] == 'e' || src[i] == 'E')
 		{
-			src[i] == '3';
+			src[i] = '3';
 		}
 
 		else if (src[i] == 'o' || src[i] == 'O')
 		{
-			src[i] == '0';
+			src[i] = '0';
 		}
 
 		else if (src[i] == 't' || src[i] == 'T')
 		{
-			src[i] == '7';
+			src[i] = '7';
 		}
 
 		else if (src[i] == 'l' || src[i] == 'I')
 		{
-			src[i] == '1';
+			src[i] = '1';
 		}
 	}
 

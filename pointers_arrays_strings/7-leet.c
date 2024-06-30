@@ -14,7 +14,7 @@ char *leet(char *src)
 
 	char letters[] = "aAeEoOtTlL";
 	char leet[] = "4433007711";
-	
+
 	for (i = 0; src[i] != '\0'; i++)
 	{
 		for (j = 0; letters[j] != '\0'; j++)
@@ -27,6 +27,6 @@ char *leet(char *src)
 			}
 		}
 	}
-	
-	return src;
+
+	return (src);
 }

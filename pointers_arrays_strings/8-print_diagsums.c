@@ -1,10 +1,9 @@
 #include "main.h"
-#include <string.h>
 #include <stdio.h>
 
 /**
- * print_diagsums -priny that encodes a string
- * @a: pointer
+ * print_diagsums -print en diagonal
+ * @a: pointe vers un tab
  * @size: octet
  */
 void print_diagsums(int *a, int size)
@@ -27,7 +26,7 @@ void print_diagsums(int *a, int size)
 		diag2 += a[i];
 		a -= size;
 	}
-	
+
 
 	printf("%d, %d\n", diag1, diag2);
 }

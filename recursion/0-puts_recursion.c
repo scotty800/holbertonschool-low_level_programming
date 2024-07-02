@@ -1,6 +1,4 @@
 #include "main.h"
-#include <string.h>
-#include <stdio.h>
 
 /**
  * _puts_recursion -priny that encodes a string
@@ -9,10 +7,9 @@
 
 void _puts_recursion(char *s)
 {
-	int i;
-	if (s[i] == '\0')
+	if (*s)
 	{
-		_putchar(s[i]);
-		_putchar(s[i] + 1);
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
 }

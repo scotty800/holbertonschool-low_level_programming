@@ -18,7 +18,7 @@ int is_prime_number(int n)
  * _is_prime_i -find prime number
  * @a: is the variable
  * @i: prime number
- * Return: result 
+ * Return: result
  */
 
 int _is_prime_i(int a, int i)

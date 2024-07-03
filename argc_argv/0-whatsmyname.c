@@ -12,6 +12,6 @@
 int main(int argc, char **argv)
 {
 	(void)argc;
-	printf("my field is : %s\n", argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }

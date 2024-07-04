@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int somme;
+	int somme = 0;
 	int i, j;
 
 	for (i = 1; i < argc; i++)

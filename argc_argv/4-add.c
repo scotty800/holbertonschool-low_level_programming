@@ -22,9 +22,9 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				return (1);
 			}
-
-			somme = somme + atoi(argv[i]);
 		}
+		somme = somme + atoi(argv[i]);
+
 	}
 
 	printf("%d\n", somme);

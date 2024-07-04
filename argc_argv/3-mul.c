@@ -12,9 +12,6 @@ int main(int argc, char **argv)
 {
 	int i, j;
 	int somme;
-	i = atoi(argv[1]);
-	j = atoi(argv[2]);
-	somme = (i * j);
 
 	if (argc != 3)
 	{
@@ -22,9 +19,11 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	else
-	{
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	somme = (i * j);
+	
 		printf("%d\n", somme);
 		return (0);
-	}
+	
 }

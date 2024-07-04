@@ -22,8 +22,7 @@ int main(int argc, char **argv)
 	i = atoi(argv[1]);
 	j = atoi(argv[2]);
 	somme = (i * j);
-	
-		printf("%d\n", somme);
-		return (0);
-	
+
+	printf("%d\n", somme);
+	return (0);
 }

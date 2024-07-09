@@ -3,11 +3,12 @@
 #include <stdio.h>
 
 /**
- *str_concat - ConcatÃ¨ne deux chaÃ®nes de carac
- *@s1: La premiÃ¨re chaÃ® conca
- *@s2: La deuxiÃ¨me chine® cont�n
- *Return:Pointeur vers la nouvelle chaÃ®ne conc
+ * **alloc_grid -alloue une grille a deux dimensions et l'init a zero
+ * @width: la hauteur d'un tabelau
+ * @height: la taille du tableau
+ * Return: le tableau
  */
+
 int **alloc_grid(int width, int height)
 {
 	int **array;
@@ -15,18 +16,18 @@ int **alloc_grid(int width, int height)
 
 	if (width < 0 || height < 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
-	array = (int**) malloc(width * sizeof(int*));
-	for(i = 0; i < width; i++)
+	array = (int **) malloc(width * sizeof(int *));
+	for (i = 0; i < width; i++)
 	{
-		array[i] = (int*) malloc(height * sizeof(int));
+		array[i] = (int *) malloc(height * sizeof(int));
 	}
 
 	if (array == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	for (i = 0; i < width; i++)

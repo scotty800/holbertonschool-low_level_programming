@@ -6,6 +6,7 @@
  * _calloc -alloue de la memoire pour un tableau et initialise a zero
  * @nmemb: le nombre d'elements
  * @size: la taille de chaque ellement en octets
+ * Return: 0
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)

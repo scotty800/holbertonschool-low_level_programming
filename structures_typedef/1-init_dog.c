@@ -2,12 +2,12 @@
 #include "stdio.h"
 
  /**
- * init_dog - initialize a struct dog
- * @d: the dog initialized
- * @name: the name of the dog
- * @age: the age of the dog
- * @owner: the owner of the dog
- */
+  * init_dog -initialise a do struct
+  * @d: the dog initialized
+  * @name: the name of the dog
+  * @age: the age of the dog
+  * @owner: the owner of the dog
+  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {

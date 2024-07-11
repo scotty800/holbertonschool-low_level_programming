@@ -3,8 +3,8 @@
 #include "stdlib.h"
 
 /**
- * print_dog -display la structur dog
- * @d: print la structur
+ * free_dog -display la structur dog
+ * @d: pointeur de struct
  */
 
 void free_dog(dog_t *d)

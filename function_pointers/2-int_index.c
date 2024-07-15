@@ -1,9 +1,10 @@
 #include "function_pointers.h"
 #include <stdio.h>
 /**
- * print_name -Imprme un nom en utilisant une fonction de rappel
- * @name: le nom a imprimer
- * @f: pointeur vers la functiob de rappel utilisee pour imprimer le nom
+ * int_index -recherche un entier dans un tableau en utilisant une fonction de comparaison
+ * @array: le tableau d'entiers
+ * @size: la taille du tableau
+ * @cmp: pointeur vers la fonction de comparaison
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {

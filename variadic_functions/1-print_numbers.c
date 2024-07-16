@@ -4,7 +4,7 @@
 /**
  * print_numbers -imprime des nombres avec un separateur
  * @separator: chaine de caracteres a imprimer entre les nombres
- * n: nombre de parametres entiers
+ * @n: nombre de parametres entiers
  * @...: Liste d'arguments entiers a imprimer
  * Return: le resultat
  */

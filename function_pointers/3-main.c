@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 
 	if (b == 0)
 	{
-		print("Error\n");
+		printf("Error\n");
 		exit(100);
 	}
 	result = operation(a, b);

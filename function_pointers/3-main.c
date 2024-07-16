@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
- * print_name -Imprme un nom en utilisant une fonction de rappel
- * @name: le nom a imprimer
- * @f: pointeur vers la functiob de rappel utilisee pour imprimer le nom
+ * main -fonction man
+ * @argc: nombre d'arguments passées au programme
+ * @argv: tableau de chaines de caractères representant les arg
+ * Return: 0 si tous vas bien
  */
 
 int main(int argc, char **argv)
@@ -16,24 +17,23 @@ int main(int argc, char **argv)
 
 	if (argc != 4)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	operation = get_op_func(argv[2]);
 
 	a = atoi(argv[1]);
-        b = atoi(argv[3]);
+	b = atoi(argv[3]);
 
 	if (operation == NULL)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
+
+		result = operation(a, b);
+
+		printf("%d\n", result);
+		return (0);
+
+
 	}
-	
-	result = operation(a, b);
-	
-	printf("%d\n", result);
-	return (0);
-
-
-}

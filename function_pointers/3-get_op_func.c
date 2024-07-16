@@ -1,9 +1,9 @@
 #include "3-calc.h"
 #include <stdio.h>
 /**
- * print_name -Imprme un nom en utilisant une fonction de rappel
- * @name: le nom a imprimer
- * @f: pointeur vers la functiob de rappel utilisee pour imprimer le nom
+ * get_op_func -recupere la fonction correspondant a l'operateur specifie
+ * @s: chaine de caracteres representant l'operateur
+ * Return: retourne l'operation
  */
 int (*get_op_func(char *s))(int, int)
 {

@@ -4,7 +4,7 @@
  * op_add -Ajoute deux entiers
  * @a: le premier entier
  * @b: le deuxieme entier
-sh: 1: q: not found
+ * Return: le resultat
  */
 int op_add(int a, int b)
 {

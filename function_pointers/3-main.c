@@ -22,6 +22,11 @@ int main(int argc, char **argv)
 	}
 	operation = get_op_func(argv[2]);
 
+	if (argv[2][1])
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
@@ -29,12 +34,6 @@ int main(int argc, char **argv)
 	{
 		printf("Error\n");
 		exit(99);
-	}
-
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
 	}
 	result = operation(a, b);
 	printf("%d\n", result);

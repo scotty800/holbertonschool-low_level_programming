@@ -30,6 +30,12 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
+
+	if (b == 0)
+	{
+		print("Error\n");
+		exit(100);
+	}
 	result = operation(a, b);
 	printf("%d\n", result);
 	return (0);

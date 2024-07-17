@@ -79,7 +79,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				spt[j].print_func(ap);
-				separator = " , ";
+				separator = ",";
 				break;
 			}
 			j++;

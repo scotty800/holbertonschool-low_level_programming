@@ -41,12 +41,9 @@ void print_string(va_list ap)
 {
 	char *s = va_arg(ap, char*);
 
-	if (s == NULL)
-	{
+	if (!s)
 		s = "(nil)";
-	}
-	else
-		printf("%s", s);
+	printf("%s", s);
 }
 
 /**
@@ -79,7 +76,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				spt[j].print_func(ap);
-				separator = ",";
+				separator = ", ";
 				break;
 			}
 			j++;

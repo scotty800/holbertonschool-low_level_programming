@@ -4,11 +4,11 @@
 #include <string.h>
 
 /**
- * add_node - Adds a new node at the beginning of a list_t list
- * @head: Double pointer to the head of the list
- * @str: String to be duplicated and added to the new node
- * Return: Address of the new element, or NULL if it failed
+ * print_dlistint - Prints all the elements of a dlistint_t list
+ * @h: Pointer to the head of the doubly linked list
+ * Return: size
  */
+
 size_t print_dlistint(const dlistint_t *h)
 {
 	int size = 0;

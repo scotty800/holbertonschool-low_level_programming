@@ -4,11 +4,11 @@
 #include <string.h>
 
 /**
- * add_dnodeint - Adds a new node at the beginning of a dlistint_t list
- * @head: Double pointer to the head of the list
- * @n: Integer value to store in the new node
- * Return: Address of the new element, or NULL if it failed
+ * sum_dlistint - Calculates the sum of all the data (n) in a dlistint_t list
+ * @head: Pointer to the head of the doubly linked list
+ * Return: The sum of all the data (n) in the list
  */
+
 int sum_dlistint(dlistint_t *head)
 {
 	int sum = 0;
@@ -18,5 +18,5 @@ int sum_dlistint(dlistint_t *head)
 		sum += head->n;
 		head = head->next;
 	}
-	return(sum);
+	return (sum);
 }

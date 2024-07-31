@@ -3,11 +3,10 @@
 #include <stdlib.h>
 
 /**
- * binary_to_uint - Converts a binary number to an unsigned int
- * @b: String containing the binary number
- * Return: The converted number, or 0
- * if there is an invalid character in b or b is NULL
+ * print_binary - Prints the binary representation of an unsigned long int
+ * @n: The number to be converted and printed in binary format
  */
+
 void print_binary(unsigned long int n)
 {
 	if (n > 1)

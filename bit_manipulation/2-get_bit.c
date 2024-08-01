@@ -12,27 +12,11 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int *bits = NULL;
-	unsigned long int num = n;
-	int i;
+	int bit;
 
-	bits = malloc(sizeof(int) * 64);
-	if (!bits)
-	{
+	bit = ((n >> index) & 1);
+	if (index > 64)
 		return (-1);
-	}
+	return (bit);
 
-	for (i = 0; i < 64; i++)
-	{
-		bits[i] = 0;
-	}
-	i = 0;
-	while (num)
-	{
-		bits[i] = num % 2;
-		num = num / 2;
-		i++;
-	}
-
-	return (bits[index]);
 }

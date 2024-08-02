@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "main.h"
 
+/**
+ * create_file - Creates a file and writes text content to it
+ * @filename: the name of the file
+ * @text_content: the text content to write
+ * Return: 1 for success, -1 for fails
+ */
 int create_file(const char *filename, char *text_content)
 {
 	ssize_t index = 0;
